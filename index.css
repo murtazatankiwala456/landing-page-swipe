@@ -36,6 +36,13 @@
   --primary-button-hover: #6d7a88;
   --bg-white: #fff;
   --bg-light: #f7f9fc;
+  --primary-gradient: linear-gradient(
+    101.33deg,
+    #08209a 0.76%,
+    #6563ff 33.33%,
+    #36c5f0 76.92%,
+    #83e2ff 96.96%
+  );
 }
 
 body {
@@ -267,6 +274,7 @@ p {
 /* hero section */
 main {
   margin: var(--spacing-xl) 0;
+  width: 100%;
 }
 
 .button-container {
@@ -278,6 +286,14 @@ main {
   margin: 0 0 0 var(--spacing-md);
   color: var(--purple-2);
 }
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero p {
+  max-width: 480px;
+}
 .hero .hero-phone-container {
   height: 568px;
   align-items: flex-end;
@@ -288,6 +304,11 @@ main {
 }
 
 /* Partners Section */
+.partners-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .partners-grid img {
   height: 60px;
   place-self: center;
@@ -304,6 +325,9 @@ main {
 /* Unified Platform Section */
 .unified-platform-section {
   padding: var(--spacing-xl) 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .unified-platform-section h2 {
   width: 50%;
@@ -317,6 +341,11 @@ main {
   background-color: var(--primary-accent);
 }
 /* Graphic Section */
+.graphic-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .graphic-grid {
   display: grid;
   grid-template-areas:
@@ -351,6 +380,9 @@ main {
 .integrations-section {
   color: var(--text-light);
   background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .integrations-section .subtitle2 {
@@ -385,6 +417,11 @@ main {
   border-radius: 20px;
 }
 /* Why Swipe Section */
+.why-swipe-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .why-swipe-section .card-container {
   display: flex;
   margin: var(--spacing-lg) 0;
@@ -398,4 +435,124 @@ main {
 
 .why-swipe-section .secondary-text {
   color: var(--text-dark);
+}
+
+/* Global Section */
+.global-section {
+  background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--text-light);
+  position: relative;
+  padding: calc(var(--spacing-xl) * 3) 0;
+}
+
+.global-section .subtitle2 {
+  color: var(--blue-1);
+}
+.global-section a {
+  color: var(--blue-1);
+}
+.global-section a:hover {
+  color: var(--text-light);
+}
+
+.global-section .card-container {
+  display: flex;
+  margin: calc(var(--spacing-xl) * 2) 0;
+}
+.global-section .card {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+}
+.global-section .card h3 {
+  border-left: 2px solid var(--blue-1);
+  padding: 0 0 0 var(--spacing-sm);
+  line-height: 28px;
+}
+#globe {
+  max-width: 844px;
+  opacity: 25%;
+  position: absolute;
+  top: 10%;
+}
+
+/* Virtual Events Section */
+.virtual-events-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--spacing-xl) * 2) 0;
+}
+.virtual-events-section .col-left {
+  height: 446px;
+  padding: 0 var(--spacing-xl) 0 0;
+}
+.virtual-events-section .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0 0 0;
+}
+.virtual-events-section .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+.swipe-sessions-card {
+  width: 540px;
+  height: 446px;
+  box-shadow: var(--standard-box-shadow);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.swipe-sessions-card .card-top {
+  background-color: var(--purple-1);
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swipe-sessions-card .card-top::before {
+  background: var(--primary-gradient);
+  content: "";
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  top: -40%;
+  transform: skewY(-5deg);
+  z-index: 1;
+}
+#session-logo {
+  z-index: 2;
+  width: 338px;
+}
+.virtual-events-section .avatars img {
+  width: 80px;
+}
+.virtual-events-section .avatars img:nth-of-type(2) {
+  position: absolute;
+  left: 55px;
+}
+.virtual-events-section .avatars {
+  position: absolute;
+  bottom: -70px;
+  left: var(--spacing-xl);
+  z-index: 3;
+}
+
+.virtual-events-section .card-bottom {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  padding: var(--spacing-xl);
+}
+.virtual-events-section .card-bottom .subtitle {
+  margin: var(--spacing-lg) 0 0 0;
+}
+.virtual-events-section .card-bottom .secondary-text {
+  color: var(--text-dark);
+  width: 50%;
+  font-weight: 700;
 }
