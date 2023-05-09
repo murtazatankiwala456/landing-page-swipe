@@ -822,6 +822,10 @@ main {
   #session-logo {
     width: 300px;
   }
+  /* getting started */
+  .getting-started-section .card .icon {
+    height: 35px;
+  }
   /* footer */
   .footer .section-container {
     flex-wrap: wrap;
