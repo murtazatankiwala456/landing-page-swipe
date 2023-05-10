@@ -717,6 +717,7 @@ main {
     --h1-size: 88px;
     --h1-height: 85px;
   }
+  /* hero */
   .hero-phone {
     height: 550px;
     transform: translateY(-60px);
@@ -741,7 +742,7 @@ main {
     --h1-size: 70px;
     --h1-height: 85px;
   }
-
+  /* hero */
   .hero-phone {
     height: 550px;
     transform: translateY(-62px);
@@ -870,6 +871,7 @@ main {
     --h1-height: 65px;
     --h3-size: 34px;
   }
+  /* layout design */
   .two-column {
     flex-direction: column;
   }
